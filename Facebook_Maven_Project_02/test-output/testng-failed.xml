@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite parallel="classes" name="Failed suite [SuiteFacebook]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="classes" name="Chrome(failed)">
+    <parameter name="browser" value="Chrome"/>
+    <classes>
+      <class name="testNgPack.TestNGFormClass">
+        <methods>
+          <include name="verifyPassword"/>
+          <include name="verifyLastName"/>
+          <include name="openBrowser"/>
+          <include name="verifyMobileNo"/>
+          <include name="openSignUpPage"/>
+          <include name="verifyFirstName"/>
+          <include name="verifyRadioButton"/>
+        </methods>
+      </class> <!-- testNgPack.TestNGFormClass -->
+      <class name="testNgPack.TestNGClass">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openSignUpPage"/>
+          <include name="verifyPrivacyPolicylink"/>
+          <include name="closedCurrentTab"/>
+          <include name="verifyCookiesPolicylink"/>
+          <include name="verifyTermsLink"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testNgPack.TestNGClass -->
+    </classes>
+  </test> <!-- Chrome(failed) -->
+  <test thread-count="5" parallel="classes" name="Firefox(failed)">
+    <parameter name="browser" value="Firefox"/>
+    <classes>
+      <class name="testNgPack.TestNGFormClass">
+        <methods>
+          <include name="verifyPassword"/>
+          <include name="verifyLastName"/>
+          <include name="openBrowser"/>
+          <include name="verifyMobileNo"/>
+          <include name="openSignUpPage"/>
+          <include name="verifyFirstName"/>
+          <include name="verifyRadioButton"/>
+        </methods>
+      </class> <!-- testNgPack.TestNGFormClass -->
+      <class name="testNgPack.TestNGClass">
+        <methods>
+          <include name="openBrowser"/>
+          <include name="openSignUpPage"/>
+          <include name="verifyPrivacyPolicylink"/>
+          <include name="closedCurrentTab"/>
+          <include name="verifyCookiesPolicylink"/>
+          <include name="verifyTermsLink"/>
+          <include name="afterClass"/>
+        </methods>
+      </class> <!-- testNgPack.TestNGClass -->
+    </classes>
+  </test> <!-- Firefox(failed) -->
+</suite> <!-- Failed suite [SuiteFacebook] -->
